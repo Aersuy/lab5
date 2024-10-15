@@ -1,3 +1,4 @@
+#pragma once
 class DispositivElectric
 {
 private:
@@ -7,5 +8,6 @@ private:
 public:
     DispositivElectric(/* args */);
     DispositivElectric(double,double,double);
+    DispositivElectric(DispositivElectric&);
     ~DispositivElectric();
 };

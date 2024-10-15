@@ -1,7 +1,8 @@
 class DispositivDigital
 {
 private:
-    /* data */
+     double c_refreshRate;
+     
 public:
     DispositivDigital(/* args */);
     ~DispositivDigital();
