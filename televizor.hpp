@@ -4,14 +4,13 @@
 #include "dispositivElectric.hpp"
 class Televizor : public DispositivElectric
 {
-private:
+protected:
     double c_marime;
-    std::vector<int> c_resolution;
     std::string c_tipEcran;
     double c_refreshRate; // hz;
 public:
     Televizor();
-    Televizor(double);
+    Televizor(double,std::string,double);
     Televizor(Televizor&);
     ~Televizor();
 };

@@ -1,9 +1,15 @@
+#pragma once
+#include <string>
 class DispositivDigital
 {
-private:
+protected:
      double c_refreshRate;
-     
+     std::string c_brand;    
+     std::string c_model;   
+     std::string c_serialNumber;  
 public:
-    DispositivDigital(/* args */);
+    DispositivDigital(double,std::string,std::string,std::string);
+    DispositivDigital();
+    DispositivDigital(DispositivDigital&);
     ~DispositivDigital();
 };

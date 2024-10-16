@@ -5,16 +5,15 @@
 class Monitor : public Televizor,public DispositivDigital
 {
 private:
-    std::string c_tipPort;
+    std::string c_tipPort{};
+    int c_numberOfPorts{};
+    std::string c_aspectRatio{};
+    bool c_hasSpeakers{};
+
+ 
+
 public:
-    Monitor(/* args */);
+    Monitor(std::string,int,std::string,bool);
     ~Monitor();
 };
 
-Monitor::Monitor(/* args */)
-{
-}
-
-Monitor::~Monitor()
-{
-}
