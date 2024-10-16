@@ -3,12 +3,12 @@
 class DispositivDigital
 {
 protected:
-     double c_refreshRate;
-     std::string c_brand;    
-     std::string c_model;   
-     std::string c_serialNumber;  
+     double c_frequency{};
+     std::string c_brand{};    
+     std::string c_model{};   
+     int c_serialNumber{};
 public:
-    DispositivDigital(double,std::string,std::string,std::string);
+    DispositivDigital(double,std::string,std::string,int);
     DispositivDigital();
     DispositivDigital(DispositivDigital&);
     ~DispositivDigital();
